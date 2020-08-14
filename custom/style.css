@@ -1,0 +1,770 @@
+/*
+Theme Name: Aladin
+Theme URI: 
+Description: Tema creado para El Aladin de la Limpieza
+Version: 1.0 o cualquier otra versión si lo prefieres
+Author: Nico Foster
+Author URI: nico_foster@hotmail.com
+Tags: Tags para localizar tu tema en el repositorio de temas de WordPress ej. reinspirit, HTML, tema, etc.
+License: GNU General Public License v2.0
+*/
+
+/*Margin Default*/
+* {
+    margin: 0px;
+    padding: 0px; }
+/*Font size default*/
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 1.5rem; 
+}
+/* Colors Var */
+:root {
+    --main-color: #FFCE00;
+    --second-color: #A2A2A2;
+    --third-color: #464646;
+    --fourth-color: #1C1B1B;
+  }
+ /* NAVBAR */
+.navbar { 
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    padding: 10px 0;
+}
+.navbar-brand {
+    margin-left: 80px;
+    color: var(--fourth-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.375em;
+}
+.navbar-brand:hover {
+    color: var(--fourth-color);
+}
+.navbar-nav {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.nav-link {  
+    margin-right: 1em !important;
+    color: var(--fourth-color);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.nav-link:hover { 
+    color: var(--fourth-color);
+}
+.navbar-collapse { 
+    justify-content: flex-end;
+}
+.navbar-toggler {  
+    background: rgba(255, 255, 255, 0.24) !important;
+}
+.container-social-icon {
+    margin-right: 80px;
+    height: 100%;
+}
+.social-icon > img {
+    margin: 0 10px;
+    width: 35px;
+    height: 35px;
+}
+/* Medium screens, laptops - Media queries */ 
+@media screen and (max-width: 1366px) {
+    .navbar { 
+        height: 60px;
+    }
+	.navbar-brand {
+    	margin-left: 40px;
+	}
+	.container-social-icon {
+    	margin-right: 40px;
+	}
+	.social-icon > img {
+	    width: 25px;
+    	height: 25px;
+	}
+}
+/* Small screens, mobile - Media queries */ 
+@media screen and (max-width: 768px) {
+	.navbar { 
+    	height: 55px;
+        width: 100%;
+    }
+    .navbar-brand {
+    margin-left: 20px;
+    font-size: 1em;
+    }
+   	.social-icon > img {
+	    display: none;
+	}
+    .navbar-nav {
+        background-color: var(--third-color) !important;
+        padding-right: 0;
+    }
+    .nav-item {
+        border: 1px solid white;
+    }
+    .nav-link {
+        font-family: 'Nunito', sans-serif;
+        color: white !important;
+        font-size: 0.9em;
+    }
+    .nav-item:hover {
+        background-color: var(--main-color);
+    }
+    .navbar-toggler:focus {
+        outline: none;
+    }
+}
+/* HEADER */
+.header {
+    position: relative;
+	background-image: url('http://localhost/wordpress/wp-content/uploads/2020/08/inicio_img.jpg');
+	-webkit-background-size: cover;
+   	-moz-background-size: cover;
+   	-o-background-size: cover;
+   	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.overlay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(70, 70, 70, 0.3);
+}
+.maintitle {
+    color: white;
+    position: absolute;
+    top: 30%;
+    margin-left: 80px;
+    width: auto;
+}
+.maintitle h1 {
+    font-size: 6.25rem;
+    font-weight: 700;
+    text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
+}
+.maintitle > p {
+    width: 100%;
+    font-size: 2em;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.6);
+}
+.maintitle > p > span {
+    color: var(--main-color);
+}
+/* Medium screens, laptops - Media queries */ 
+@media screen and (max-width: 1366px) {
+	.maintitle {
+    	margin-left: 40px;
+	}
+	.maintitle h1 {
+    	font-size: 4.25rem;
+	}
+	.maintitle > p {
+    	font-size: 1.4em;
+	}
+}
+/* Small screens, mobile - Media queries */ 
+@media screen and (max-width: 768px) {
+	.maintitle {
+    	margin-left: 20px;
+    	padding: 5px;
+	}
+	.maintitle h1 {
+    	font-size: 2.25rem;
+	}
+	.maintitle > p {
+    	font-size: 1.1em;
+	}
+}	
+/* BARRA BACKGROUND */ 
+#lineBack {
+    position: relative;
+    height: 100%;
+}
+.lineBack {
+    position: absolute;
+    z-index: -1;
+    width: 307px;
+    height: 100%;
+    background-color: var(--main-color);
+}
+/* Small screens, mobile - Media queries */ 
+@media screen and (max-width: 768px) {
+	.lineBack {
+		width: 40px;
+	}
+}
+/* QUIENES SOMOS */
+#nosotros {
+	width: 100%;
+	height: 981px;
+    display: flex;
+    align-items: center;
+}
+.contQs {
+    width: 100%;
+    height: 100%;
+}
+.imgQS {
+	height: 100%;
+    width: 100%;
+    margin-left: 80px;
+}
+.contQs {
+    width: 100%;
+    padding: 210px 60px;
+}
+.contQs > div > div > h2 { 
+    color: var(--fourth-color);
+    font-size: 2em;
+    line-height: 1.5em;
+    font-weight: 700;
+}
+.line {
+    margin: 30px 0;
+    height: 1px;
+    width: 117px;
+    border-top: var(--main-color) solid 2px;
+}
+.contQs > div > div > p {
+    color: var(--fourth-color);
+    font-size: 1.375em;
+    font-weight: 600;
+    margin-top: 36px;
+}
+.btn-contact {
+    background-color: var(--main-color);
+    width: 211px;
+    height: 60px;
+    margin-top: 60px;
+}
+.btn-contact > a {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+.btn-contact:hover a {
+    color: var(--fourth-color);
+    transition: 200ms;
+}
+/* Medium screens, laptops - Media queries */ 
+@media screen and (max-width: 1366px) {
+    #nosotros {
+        height: auto;
+    }
+	.imgQS {
+		margin-left: 40px;
+	}
+	.contQs {
+    	padding: 200px 30px;
+	}
+	.contQs > div > div > h2 { 
+    font-size: 1.5em;
+    }
+    .line {
+    	margin: 7px 0;
+    }
+    .contQs > div > div > p {
+    	font-size: 1.2em;
+	    margin-top: 8px;
+	}
+}
+/* Small screens, mobile - Media queries */ 
+@media screen and (max-width: 768px) {
+	.imgQS {
+		display: none;
+	}
+	.contQs {
+    	padding: 80px 15px 0 65px;
+	}
+	.contQs > div > div > h2 { 
+    font-size: 1.1em;
+    }
+    .contQs > div > div > p {
+    	font-size: 0.8em;
+	    margin-top: 6px;
+	}
+    .btn-contact {
+        height: 40px;
+    }
+}
+/* SERVICIOS */
+#servicios {
+    width: 100%;
+    height: 100%;
+}
+.contSv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.contImg-1  {
+    float: left;
+    height: 782px;
+	width: 481px;
+    filter: grayscale(100%);
+    overflow: hidden;
+	background-image: url('http://localhost/wordpress/wp-content/uploads/2020/08/img1.jpg');
+	-webkit-background-size: cover;
+   	-moz-background-size: cover;
+   	-o-background-size: cover;
+   	background-size: cover;
+}
+.contImg-2 {
+    float: left;
+    height: 782px;
+	width: 481px;
+    filter: grayscale(100%);
+    overflow: hidden;
+	background-image: url('http://localhost/wordpress/wp-content/uploads/2020/08/img2-1.jpg');
+	-webkit-background-size: cover;
+   	-moz-background-size: cover;
+   	-o-background-size: cover;
+   	background-size: cover;
+}
+.contImg-3 {
+    float: left;
+    height: 782px;
+	width: 481px;
+    filter: grayscale(100%);
+    overflow: hidden;
+	background-image: url('http://localhost/wordpress/wp-content/uploads/2020/08/img3.jpg');
+	-webkit-background-size: cover;
+   	-moz-background-size: cover;
+   	-o-background-size: cover;
+   	background-size: cover;
+}
+.contImg-4 {
+    float: left;
+    height: 782px;
+	width: 481px;
+    filter: grayscale(100%);
+    overflow: hidden;
+	background-image: url('http://localhost/wordpress/wp-content/uploads/2020/08/img4.jpg');
+	-webkit-background-size: cover;
+   	-moz-background-size: cover;
+   	-o-background-size: cover;
+   	background-size: cover;
+}
+.contImg-1:hover {
+    filter: grayscale(0%);
+    transition: 1s;
+}
+.contImg-2:hover {
+    filter: grayscale(0%);
+    transition: 1s;
+}
+.contImg-3:hover {
+    filter: grayscale(0%);
+    transition: 1s;
+}
+
+.contImg-4:hover {
+    filter: grayscale(0%);
+    transition: 1s;
+}
+.divOver {
+    position: absolute;
+    height: 170px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.57);
+}
+.info {
+    color: white;
+    padding: 10px;
+}
+.info > h2 {
+    font-size: 2em;
+    font-weight: 700;
+}
+.info > p {
+    font-size: 1.375em;
+    line-height: 1.5em;
+    font-weight: 400;
+    opacity: 0;
+}
+.contImg-1:hover .divOver {
+    height: 275px;
+    transition: 1s;
+}
+.contImg-2:hover .divOver {
+    height: 275px;
+    transition: 1s;
+}
+.contImg-3:hover .divOver {
+    height: 275px;
+    transition: 1s;
+}
+.contImg-4:hover .divOver {
+    height: 275px;
+    transition: 1s;
+}
+.contImg-1:hover .info > p {
+    opacity: 1;
+    transition: 2s;
+}
+.contImg-2:hover .info > p {
+    opacity: 1;
+    transition: 2s;
+}
+.contImg-3:hover .info > p {
+    opacity: 1;
+    transition: 2s;
+}
+.contImg-4:hover .info > p {
+    opacity: 1;
+    transition: 2s;
+}
+/* Medium screens, laptops - Media queries */ 
+@media screen and (max-width: 1366px) {
+    .contImg-1, .contImg-2, .contImg-3, .contImg-4  {
+    height: 600px;
+    width: 100%;
+    }
+	.info {
+    	padding: 15px;
+	}
+	.info > h2 {
+    	font-size: 1.4em;
+	}
+	.info > p {
+    	font-size: 1.1em;
+    }
+}
+/* Small screens, mobile - Media queries */ 
+@media screen and (max-width: 768px) {
+    #servicios {
+        height: auto;
+    }
+	.contSv {
+        height: auto;
+        display: flex;
+    	flex-flow: row wrap;
+    	justify-content: center;
+	}
+	.contImg-1 {
+	    height: 230px;
+		width: 286px;
+		background-image: url('http://localhost/wordpress/wp-content/uploads/2020/08/img1_mobile.jpg');
+		margin-top: 40px;
+	}
+	.contImg-2 {
+	    height: 230px;
+		width: 286px;
+		background-image: url('http://localhost/wordpress/wp-content/uploads/2020/08/img2_mobile.jpg');
+		margin-top: 40px;
+	}
+	.contImg-3 {
+	    height: 230px;
+		width: 286px;
+		background-image: url('http://localhost/wordpress/wp-content/uploads/2020/08/img3_mobile.jpg');
+		margin-top: 40px;
+	}
+	.contImg-4 {
+	    height: 230px;
+		width: 286px;
+		background-image: url('http://localhost/wordpress/wp-content/uploads/2020/08/img4_mobile.jpg');
+		margin-top: 40px;
+	}
+	.divOver {
+        height: 80px;
+        width: 100%;
+    }
+    .info > h2 {
+    	font-size: 1.1em;
+	}
+	.info > p {
+    	display: none;
+    }
+
+    .contImg-1:hover .divOver {
+        height: 80px;
+        transition: 100%;
+    }
+
+    .contImg-2:hover .divOver {
+        height: 80px;
+        transition: 100%;
+    }
+    .contImg-3:hover .divOver {
+        height: 80px;
+        transition: 100%;
+    }
+
+    .contImg-4:hover .divOver {
+        height: 80px;
+        transition: 100%;
+    }
+}
+/* CONTACTO */
+#contacto {
+    width: 100%;
+    height: 100%;
+}
+.containerContact {
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+}
+#reply {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    display: none;
+}
+.activeReplay {
+    display: block;
+}
+#reply > p {
+    font-size: 1.5rem;
+    color: white;
+    line-height: 2rem;
+}
+.containerFormContact {
+    position: relative;
+    width: 822px;
+    height: 739px;
+    padding: 60px 30px;
+    background-color: var(--third-color);
+    z-index: 0;
+}
+.containerFormContact > h2 {
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+}
+.mapContact {
+    width: 822px;
+    height: 739px;
+    background-color: lightgrey;
+}
+.dv1Form {
+    margin-right: 3px;
+    width: 50%;
+}
+.dv2Info {
+    margin-left: 10px;
+    width: 50%;
+    color: white;
+    font-size: 1.375em;
+    font-weight: 400;
+}
+.infoContact > div {
+    margin-bottom: 10px;
+}
+.infoContact > div > p {
+    padding-left: 10px;
+}
+.mapContact > iframe {
+    width: 100%;
+    height: 100%;
+}
+select, input, textarea {
+    border: 1px 0 solid white;
+    background-color: rgba(0,0,0,0) !important;
+    color: white !important;
+}
+option {
+    background-color: var(--third-color) !important;
+}
+.form-control:focus {
+    border-color: var(--main-color) !important;
+    box-shadow: none !important; 
+    -webkit-border-color: var(--main-color) !important;
+    -moz-border-color: var(--main-color) !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+}
+.greetingVisit {
+    color: var(--fourth-color);
+    font-size: 2em;
+    width: 100%; 
+    height: auto;
+}
+.container-greeting-social {
+    width: 100%;
+    height: 200px;
+}
+.contSocial > div > a > img {
+    display: none;
+}
+#submit-btn {
+    background-color: var(--main-color);
+    width: 211px;
+    height: 60px;
+    margin-top: 60px;
+    font-weight: 700;
+    color: white;
+    border: none;
+}
+#submit-btn:hover {
+    color: var(--fourth-color);
+    transition: 200ms;
+}
+/* Medium screens, laptops - Media queries */ 
+@media screen and (max-width: 1366px) {
+    .containerContact {
+        width: 100%;
+        height: 100%;
+    }
+	.containerFormContact {
+    	width: 600px;
+        height: 500px;
+    	padding: 10px 15px;
+    }
+    .mapContact {
+    	width: 600px;
+        height: 500px;
+    }
+    .containerFormContact > h2 {
+        font-size: 1.4em;
+    }
+    #submit-btn {
+    	width: 150px;
+    	height: 45px;
+    	margin-top: 15px;
+		font-size: 0.8em;
+        font-weight: 700;
+        color: white;
+        border: none;
+	}
+	.dv2Info {
+    	font-size: 0.9em;
+    	margin-top: 10px;
+    }
+    select, input, textarea {
+        font-size: 0.8em !important;
+    }
+    .greetingVisit {
+        height: 100px;
+        padding: 30px 0;
+        padding-bottom: 0px;
+    }
+}
+/* Small screens, mobile - Media queries */ 
+@media screen and (max-width: 768px) {
+	.containerContact {
+        height: 100%;
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.containerFormContact > div {
+        height: 100%;
+		display: flex;
+		flex-flow: row wrap-reverse;
+	}
+    .containerFormContact {
+        width: 100%;
+        height: auto;
+        padding: 20px 30px;
+    }
+    .containerFormContact > h2 {
+        font-size: 1.1em;
+    }
+    .mapContact {
+        width: 100%;
+        height: 200px;
+    }
+    .dv1Form {
+        margin-right: 0px;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+   	.form-control {
+		font-size: 0.75em;
+	}
+    .dv2Info {
+        margin-left: 0px;
+        width: 100%;
+        font-size: 0.8em;
+    }
+    .infoContact > div {
+        margin-bottom: 2px;
+    }
+    .infoContact > p {
+        padding-left: 5px;
+    }
+    #submit-btn {
+        width: 160px;
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .mapContact > iframe {
+        width: 100%;
+        height: 100%;
+    }
+    .greetingVisit > h3 {
+        font-size: 0.6em;
+        font-weight: 700;
+    }
+    .contSocial {
+        width: 100%;
+        height: auto;
+    }       
+    .contSocial > div > a > img {
+        width: 25px;
+        height: 25px;
+        display: block;
+    }
+    .contSocial > div {
+        padding-left: 10px;
+    }
+    .container-greeting-social {
+        width: 100%;
+        height: 160px;
+    }
+}
+/* FOOTER */
+#footer {
+    height: 90px;
+    width: 100%;
+    background-color: var(--second-color);
+    color: white;
+    margin-bottom: 0;
+}
+.copr {
+    width: 100%;
+    height: 100%;
+}
+.copr > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--main-color);
+}
+/* Small screens, mobile - Media queries */ 
+@media screen and (max-width: 768px) {
+	#footer {
+    	height: 60px;
+    	font-size: 0.7em;
+	}
+}
+
+
